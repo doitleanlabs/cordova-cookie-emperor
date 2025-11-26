@@ -51,11 +51,13 @@
             <application tools:replace="android:icon" />
         </edit-config-->
  
-        <source-file src="src/android/TensorFlowFidelidadePlugin.java" 
-            target-dir="src/com/tensorflow/fidelidade/plugin" />
+        <source-file src="src/android/TensorFlowFidelidadePlugin.java" target-dir="src/com/tensorflow/fidelidade/plugin" />
+		
 		<framework src="src/android/lib/tensorflow.gradle" custom="true" type="gradleReference" />  
-
-        <!-- Copy lib files to Cordova Project -->
+        <framework src="src/android/build-extras.gradle" custom="true" type="gradleReference" />
+        
+		
+		<!-- Copy lib files to Cordova Project -->
         <!-- Model Enq -->
         <source-file src="src/android/enq_model.tfbundle/model.json" target-dir="app/src/main/assets/enq_model.tfbundle"/>
         <source-file src="src/android/enq_model.tfbundle/enq_model.tflite" target-dir="app/src/main/assets/enq_model.tfbundle"/>
