@@ -47,9 +47,9 @@
             </feature>
         </config-file>
 
-        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+        <!--edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
             <application tools:replace="android:icon" />
-        </edit-config>
+        </edit-config-->
  
         <source-file src="src/android/TensorFlowFidelidadePlugin.java" 
             target-dir="src/com/tensorflow/fidelidade/plugin" />
