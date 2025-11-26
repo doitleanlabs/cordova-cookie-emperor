@@ -1,0 +1,8 @@
+// build-extras.gradle
+configurations {
+    all {
+        // Exclui a dependência mais provável de ser a duplicada (ListenableFuture separado)
+        // Isso força o uso da versão incluída dentro do Guava.
+        exclude group: 'com.google.guava', module: 'listenablefuture'
+    }
+}
